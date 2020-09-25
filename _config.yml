@@ -2,3 +2,23 @@
 # Site settings
 title: Edgar Sargsyan
 name: Edgar Sargsyan
+
+
+#User specific content
+#Links that will appear in the navbar
+primarylinks:
+ - title: GitHub
+   url: https://github.com/cyber-eternal
+ - title: Upwork
+   url: https://www.upwork.com/freelancers/~0132a93268ec804fb8
+ - title: Kwork
+   url: https://kwork.ru/user/anonymous92
+   
+   
+   
+#Any buzzword skills you want to include
+skills:
+ - Node.js
+ - Express 
+ - Serverless
+ - AWS
