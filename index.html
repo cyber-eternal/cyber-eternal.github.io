@@ -1,93 +1,100 @@
 <!DOCTYPE html>
 <!-- saved from url=(0035)file:///home/user/Documents/CV.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Web Page Design</title>
-<style type="text/css">
-  #body {
-    margin: 0;
-    padding: 0;
-    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-    color: #6C7073;
-  }
+<html>
 
-  #prof {
-    text-align: center;
-    margin-top: 0px
-  }
-  a.projects {
-    font-weight: bold;
-  }
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Edgar Sargsyan's CV</title>
+  <link rel="icon" type="image/png" href="./images/logo.png" />
+  <style type="text/css">
+    #body {
+      margin: 0;
+      padding: 0;
+      font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+      color: #6C7073;
+    }
 
-  #rightSide>p,
-  #rightSide>div>p,
-  #rightSide>.list>li {
-    line-height: 16px;
-    font-size: 16px;
-    line-height: 1.3;
-  }
+    #prof {
+      text-align: center;
+      margin-top: 0px
+    }
 
-  #leftSide {
-    width: 28%;
-    padding: 15px;
-    height: 2500px;
-    float: left;
-    background-color: #0F1114;
-    color: #DCDCE7
-  }
+    a.projects {
+      font-weight: bold;
+    }
 
-  h1 {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 0px
-  }
+    #rightSide>p,
+    #rightSide>div>p,
+    #rightSide>.list>li {
+      line-height: 16px;
+      font-size: 16px;
+      line-height: 1.3;
+    }
 
-  #leftSide>h2,
-  #rightSide>h2 {
-    font-size: 20px;
-  }
+    #leftSide {
+      width: 28%;
+      padding: 15px;
+      height: 2500px;
+      float: left;
+      background-color: #0F1114;
+      color: #DCDCE7
+    }
 
-  #rightSide {
-    width: 65%;
-    padding: 5px;
-    float: right;
-    height: 2500px;
-  }
+    h1 {
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 0px
+    }
 
-  #leftSide>p>span,
-  #leftSide>.list>li {
-    font-size: 15px;
-    line-height: 1.3;
-  }
+    #leftSide>h2,
+    #rightSide>h2 {
+      font-size: 20px;
+    }
 
-  .boldSpan {
-    font-weight: bold;
-    display: block;
-  }
+    #rightSide {
+      width: 65%;
+      padding: 5px;
+      float: right;
+      height: 2500px;
+    }
 
-  .inline {
-    widows: 20%;
-    margin: 10px;
-    float: left;
-  }
+    #leftSide>p>span,
+    #leftSide>.list>li {
+      font-size: 15px;
+      line-height: 1.3;
+    }
 
-  #text {
-    clear: both;
-    font-size: 12px;
-  }
+    .boldSpan {
+      font-weight: bold;
+      display: block;
+    }
 
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #5180AE;
-    margin: 1em 0;
-    padding: 0;
-  }
+    .inline {
+      widows: 20%;
+      margin: 10px;
+      float: left;
+    }
 
-  a {
-    text-decoration: none !important;
-    color: #11678c
-  }
-</style>
+    #text {
+      clear: both;
+      font-size: 12px;
+    }
+
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #5180AE;
+      margin: 1em 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none !important;
+      color: #11678c
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
 </head>
 
 <body id="body">
@@ -99,7 +106,8 @@
     <hr>
     <h2>Contact</h2>
     <hr>
-    <p><span class="boldSpan">Address:</span><span>Yerevan, Komitas, Hakob Hakobyan st. building 2, apartment 19</span></p>
+    <p><span class="boldSpan">Address:</span><span>Yerevan, Komitas, Hakob Hakobyan st. building 2, apartment 19</span>
+    </p>
     <p><span class="boldSpan">Phone:</span><span>+374 77 199205</span><br><span>+374 55 081992</span></p>
     <p><span class="boldSpan">Date of Birth:</span><span>24-08-1992</span></p>
     <p><span class="boldSpan">Email:</span><span>92edgarsargsyan@gmail.com</span></p>
@@ -148,7 +156,7 @@
   <div id="rightSide">
     <h2>Professional Summary</h2>
     <hr>
-    <p>  My aim is not only to establish coding but I also provide
+    <p> My aim is not only to establish coding but I also provide
       relevant and clear cut coding methods which are
       implemented in order to attain the most efficient coding
       system possible.</p>
@@ -160,8 +168,10 @@
     <ul class="list">
       <li>Cloud Application Architecture</li>
       <li>Serverless Application </li>
-      <li>AWS services (IAM, EC2, Lambda, Step Functions, S3, DynamoDB, Aurora, RDS, API Gateway, CodePipeline, CodeDeploy, <br>
-        CodeBuild SES, SNS, SQS, VPC, Route53, CloudWatch, CloudFormation, CloudFront, Amazon ECS/ECR (Docker) etc...)</li>
+      <li>AWS services (IAM, EC2, Lambda, Step Functions, S3, DynamoDB, Aurora, RDS, API Gateway, CodePipeline,
+        CodeDeploy, <br>
+        CodeBuild SES, SNS, SQS, VPC, Route53, CloudWatch, CloudFormation, CloudFront, Amazon ECS/ECR (Docker) etc...)
+      </li>
       <li>Programming Languages – JavaScript, Python</li>
       <li>Databases – Redis, MongoDb, Mysql, SQL, Postgresql, DynamoDb, Cassandra Db</li>
       <li>Dev Ops ( Docker, Linux, Chef, Jenkins, Kubernetes)</li>
@@ -185,43 +195,64 @@
     <!-- <br> -->
     <h2 style="margin-top: 60px;">Experience</h2>
     <hr>
-    <h4>Back End Software Engineer || Cloud Architect at Preezma (from 10-2019 to Present)</h4>
+    <h4>Back End Software Engineer || Cloud Architect at Preezma (from 10-2019 to Present) <a
+        href="https://preezma.com/"><img src="./images/preez-logo.png" alt="LS" style="height: 20px;"></a></h4>
     <ul class="list">
-      <li><a class='projects' href="https://chatmantics.com/">Chatmantics</a> : Conversations that drive efficient customer acquisition. Chatmantics is a
+      <li><a class='projects' href="https://chatmantics.com/">Chatmantics</a> : Conversations that drive efficient
+        customer acquisition. Chatmantics is a
         conversational automation platform that allows you to plan,
-        deploy and integrate virtual assistants powered by AI and Natural Language  (Node.js, Serverless, AWS, Aurora(Mysql)). Payment method integration(Stripe).
+        deploy and integrate virtual assistants powered by AI and Natural Language (Node.js, Serverless, AWS,
+        Aurora(Mysql)). Payment method integration(Stripe).
         Different tables data getting, filtering, searching, sorting and exporting as
-        CSV.IBM Watson API integration (Bots). Nexmo and Bandwidth APIs integration.Automated voice and text messaging system implementation. </li>
+        CSV.IBM Watson API integration (Bots). Nexmo and Bandwidth APIs integration.Automated voice and text messaging
+        system implementation. </li>
       <li><a class='projects' href="https://app.rostermetrics.com/">Roster Metrics</a> : Machine Learning
         Powered Fantasy Sports
-        Projections (AWS, Serverless, Node.js). I'm worked on Back End, Database and Cloud Architecture. Payment method integration(Stripe). Integration SportsData.io API.Syncing data with SportsData.io API (NBA, MLB, NFL, NHL, MMA,
-        PGA, etc...), Projections getting, filtering, searching, sorting and exporting as CSV. Lineup Optimizer implementation using R scripts </li>
+        Projections (AWS, Serverless, Node.js). I'm worked on Back End, Database and Cloud Architecture. Payment method
+        integration(Stripe). Integration SportsData.io API.Syncing data with SportsData.io API (NBA, MLB, NFL, NHL, MMA,
+        PGA, etc...), Projections getting, filtering, searching, sorting and exporting as CSV. Lineup Optimizer
+        implementation using R scripts </li>
       <li>And also work on Preezma startups</li>
     </ul>
-    <h4>Back End Software Engineer at LS Innovations (from 01-2018 to 10-2019)</h4>
+    <h4>Back End Software Engineer at LS Innovations (from 01-2018 to 10-2019) <a href="https://lstones.eu/en"><img
+          src="./images/logo2-flat.svg" alt="LS" style="height: 20px;"></a></h4>
     <ul class="list">
-      <li><a class='projects' href="https://www.mytravelbiz.com/">Mytravelbiz</a> : Mytravelbiz is a platform for buying and booking airline tickets, booking cars and
-        hotels. Also, have a Multilevel Marketing, Wallet and Direct Sales (AWS, Serverless, Node.js) 
+      <li><a class='projects' href="https://www.mytravelbiz.com/">Mytravelbiz</a> : Mytravelbiz is a platform for buying
+        and booking airline tickets, booking cars and
+        hotels. Also, have a Multilevel Marketing, Wallet and Direct Sales (AWS, Serverless, Node.js)
         Worked with different API-s for getting, booking, buying, updating and
         canceling Hotels, Cars, and Airline tickets(Priceline, Expedia, etc...​ ).
-        Implementation Payment Methods(Stripe, SnapPay, PCI Gate, CoinPayments). KYC system. Created MTB Wallet with its own payment system. Also worked on creating an admin panel to manage all system.</li>
-      <li><a href="https://www.travelcoin.org/">Travelcoin Foundation</a> :Purchase system of coins that you can spend in Mytravelbiz platforms
-        (AWS, Serverless, Node.js). Auto Buy system. Matching algorithm system.Coins purchase with different coins(BTC, ETH, etc...). 
+        Implementation Payment Methods(Stripe, SnapPay, PCI Gate, CoinPayments). KYC system. Created MTB Wallet with its
+        own payment system. Also worked on creating an admin panel to manage all system.</li>
+      <li><a href="https://www.travelcoin.org/">Travelcoin Foundation</a> :Purchase system of coins that you can spend
+        in Mytravelbiz platforms
+        (AWS, Serverless, Node.js). Auto Buy system. Matching algorithm system.Coins purchase with different coins(BTC,
+        ETH, etc...).
         Deployed Smart contracts. Also worked on creating an admin panel to manage all system. </li>
       <li><a class='projects' href="https://www.travelcoin.org/travelcoin-plus/">Travelcoin Plus</a>: ICO </li>
-      <li><a class='projects' href="https://app.e-coship.com/">E-coShip</a> : eCommerce Platform works with eBay, Amazon, Magento and delivery platforms DHL, IPO, DPD etc... (Node.js, Express, Mongodb).</li>
-      <li><a class='projects' href="https://adlooker.com/">Adlooker</a> : VR and AR Network (AWS, Serverless, Node.js).</li>
-      <li><a class='projects' href="https://snowbus.com/">Snowbus</a> :A similar platform with Mytravelbiz but in the field of ski resorts. (AWS, Serverless, Node.js, GraphQL).</li>
+      <li><a class='projects' href="https://app.e-coship.com/">E-coShip</a> : eCommerce Platform works with eBay,
+        Amazon, Magento and delivery platforms DHL, IPO, DPD etc... (Node.js, Express, Mongodb).</li>
+      <li><a class='projects' href="https://adlooker.com/">Adlooker</a> : VR and AR Network (AWS, Serverless, Node.js).
+      </li>
+      <li><a class='projects' href="https://snowbus.com/">Snowbus</a> :A similar platform with Mytravelbiz but in the
+        field of ski resorts. (AWS, Serverless, Node.js, GraphQL).</li>
       <li>Mobile app and admin panel for China restaurants.</li>
       <li>And also work on LS Innovations startups.</li>
     </ul>
     <br>
-    <h4>Back End Developer(Freelancer) (from 03-2017 to 01-2018)</h4>
+    <h4>Back End Engineer And Cloud Architect (Freelancer)</h4>
     <ul class="list">
+      <li>Lambda functions and AWS Services</li>
+      <li>Serverless applications</li>
+      <li>Solutions Architecture</li>
       <li>Worked with Crypto Exchange APIs</li>
       <li>Parsed APIs data and inserted to Postgresql database</li>
       <li>Configured VPS servers</li>
       <li>Deploy and run projects on VPS and VDS servers</li>
     </ul>
   </div>
-</body></html>
+  <button id="download">Download</button>
+  <script src="./script.js"></script>
+</body>
+
+</html>
