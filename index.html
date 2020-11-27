@@ -32,7 +32,7 @@
     }
 
     #leftSide {
-      width: 28%;
+      width: 25%;
       padding: 15px;
       height: 2500px;
       float: left;
@@ -46,13 +46,17 @@
       margin-bottom: 0px
     }
 
+    #leftSide>h1 {
+      font-size: 35px;
+    }
+
     #leftSide>h2,
     #rightSide>h2 {
       font-size: 20px;
     }
 
     #rightSide {
-      width: 65%;
+      width: 70%;
       padding: 5px;
       float: right;
       height: 2500px;
@@ -60,13 +64,14 @@
 
     #leftSide>p>span,
     #leftSide>.list>li {
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.3;
     }
 
     .boldSpan {
-      font-weight: bold;
-      display: block;
+      font-weight: bolder;
+      margin-right: 5px;
+      /* display: block; */
     }
 
     .inline {
@@ -91,7 +96,25 @@
 
     a {
       text-decoration: none !important;
-      color: #11678c
+      color: #11678c;
+      display: inline !important;
+    }
+
+    .download {
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #11678c;
+      color: whitesmoke;
+    }
+
+    .download:hover {
+      opacity: 0.8;
+    }
+
+    .logo {
+      margin-right: 5px;
+      width: 15px;
+      height: 15px;
     }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
@@ -99,21 +122,18 @@
 
 <body id="body">
   <div id="leftSide">
-    <a href="https://drive.google.com/file/d/1feoAj_nQi_uCxCWS2CTcZfDGPWI-PIZq/view?usp=sharing">See PDF and
-      Download</a>
-    <h4>Updated: 01/2020 </h4>
+    <a class="download" target="blank"
+      href="https://drive.google.com/file/d/1feoAj_nQi_uCxCWS2CTcZfDGPWI-PIZq/view?usp=sharing">Download PDF</a>
+    <span style="float: right;">Updated: 01/2020 </span>
     <h1>Edgar Sargsyan</h1><br>
     <hr>
     <h2 id="prof">Back End Software Engineer || Cloud Architect</h2>
     <hr>
-    <h2>Contact</h2>
-    <hr>
     <p><span class="boldSpan">Address:</span><span>Yerevan, Komitas, Hakob Hakobyan st. building 2, apartment 19</span>
     </p>
-    <p><span class="boldSpan">Phone:</span><span>+374 77 199205</span><br><span>+374 55 081992</span></p>
+    <p><span class="boldSpan">Phone:</span><span>+374 77 199205</span>, <span>+374 55 081992</span></p>
     <p><span class="boldSpan">Date of Birth:</span><span>24-08-1992</span></p>
     <p><span class="boldSpan">Email:</span><span>92edgarsargsyan@gmail.com</span></p>
-    <br>
     <hr>
     <h2>Languages</h2>
     <hr>
@@ -121,30 +141,32 @@
     <p>Russian:A1</p>
     <p>English: B1</p>
     <hr>
-    <br>
-    <br>
-    <br>
-    <h2 style="margin-top: 40px;">Key skills</h2>
+    <h2>Key skills</h2>
     <hr>
     <ul class="list">
-      <li>Scrum / Agile (Jira, Trello, Asana)</li>
       <li>Coding and scripting skills</li>
       <li>Software security skills</li>
       <li>Strong team management, decision making, and problem-solving skills</li>
       <li>Strong communication and collaboration skills</li>
-      <li>Able to prioritize tasks and workloads in order of importance</li>
-      <li>Ability to work in team and stress situations/li>
-      <li>Able to motivate and lead others in a team environment</li>
+      <li>Prioritizing tasks and workloads in order of importance</li>
+      <li>Hardworking</li>
+      <li>Motivating and lead others in a team environment</li>
       <li>Documents making, analysis, and research</li>
+      <li>Agile / Scram / Kanban (Jira, Trello, Asana)</li>
     </ul>
     <hr>
     <h2>Accounts</h2>
     <hr>
-    <p><a class="boldSpan" target="blank" href="https://github.com/cyber-eternal">GitHub</a></p>
-    <p><a class="boldSpan" target="blank" href="https://gitlab.com/cyber-eternal">GitLab</a></p>
-    <p><a class="boldSpan" target="blank" href="https://www.linkedin.com/in/edgar-sargsyan">Linkedin</a></p>
-    <p><a class="boldSpan" target="blank" href="https://www.upwork.com/freelancers/~0132a93268ec804fb8">Upwork</a></p>
-    <p><a class="boldSpan" target="blank" href="https://kwork.ru/user/anonymous92">Kwork</a></p>
+    <p> <img class="logo" src="./images/github-logo.png" alt="GitHub"><a class="boldSpan" target="blank"
+        href="https://github.com/cyber-eternal">GitHub</a></p>
+    <p><img class="logo" src="./images/stackoverflow-logo.png" alt="Stackoverflow"><a class="boldSpan" target="blank"
+        href="https://stackoverflow.com/users/11646401/cybereternal?tab=profile">Stackoverflow</a></p>
+    <p><img class="logo" src="./images/LinkedIn-Ilogo.png" alt="Linkedin"><a class="boldSpan" target="blank"
+        href="https://www.linkedin.com/in/edgar-sargsyan">Linkedin</a></p>
+    <p><img class="logo" src="./images/upwork-logo.png" alt="Upwork"><a class="boldSpan" target="blank"
+        href="https://www.upwork.com/freelancers/~0132a93268ec804fb8">Upwork</a></p>
+    <p><img class="logo" src="./images/kwork-png.png" alt="kwork"><a class="boldSpan" target="blank"
+        href="https://kwork.ru/user/anonymous92">Kwork</a></p>
     <hr>
     <h2>Interests</h2>
     <hr>
@@ -152,18 +174,15 @@
       <li>Machine Learning and AI</li>
       <li>Hacking and Security</li>
       <li>Sport and Extreme</li>
+      <li>Snowboarding</li>
       <li>Films and Music</li>
     </ul>
   </div>
   <div id="rightSide">
     <h2>Professional Summary</h2>
     <hr>
-    <p> My aim is not only to establish coding but I also provide
-      relevant and clear cut coding methods which are
-      implemented in order to attain the most efficient coding
-      system possible.</p>
-    <br>
-    <br>
+    <p> My aim is not only to establish coding but also to provide relevant and clear cut coding methods which are
+      implemented in order to attain the most efficient coding system possible.</p>
     <hr>
     <h2>Skill Highlights</h2>
     <hr>
@@ -192,15 +211,12 @@
       SQL/MySQL/MongoDB
       Node.js/Express.js</p>
     <hr>
-    <br>
-    <br>
-    <!-- <br> -->
-    <h2 style="margin-top: 60px;">Experience</h2>
+    <h2>Experience</h2>
     <hr>
     <h4>Back End Software Engineer || Cloud Architect at Preezma (from 10-2019 to Present) <a
         href="https://preezma.com/"><img src="./images/preez-logo.png" alt="LS" style="height: 20px;"></a></h4>
     <ul class="list">
-      <li><a class='projects' href="https://chatmantics.com/">Chatmantics</a> : Conversations that drive efficient
+      <li><a class='projects' href="https://chatmantics.com/">Chatmantics</a>: Conversations that drive efficient
         customer acquisition. Chatmantics is a
         conversational automation platform that allows you to plan,
         deploy and integrate virtual assistants powered by AI and Natural Language (Node.js, Serverless, AWS,
@@ -208,7 +224,7 @@
         Different tables data getting, filtering, searching, sorting and exporting as
         CSV.IBM Watson API integration (Bots). Nexmo and Bandwidth APIs integration.Automated voice and text messaging
         system implementation. </li>
-      <li><a class='projects' href="https://app.rostermetrics.com/">Roster Metrics</a> : Machine Learning
+      <li><a class='projects' href="https://app.rostermetrics.com/">Roster Metrics</a>: Machine Learning
         Powered Fantasy Sports
         Projections (AWS, Serverless, Node.js). I'm worked on Back End, Database and Cloud Architecture. Payment method
         integration(Stripe). Integration SportsData.io API.Syncing data with SportsData.io API (NBA, MLB, NFL, NHL, MMA,
@@ -219,24 +235,24 @@
     <h4>Back End Software Engineer at LS Innovations (from 01-2018 to 10-2019) <a href="https://lstones.eu/en"><img
           src="./images/logo2-flat.svg" alt="LS" style="height: 20px;"></a></h4>
     <ul class="list">
-      <li><a class='projects' href="https://www.mytravelbiz.com/">Mytravelbiz</a> : Mytravelbiz is a platform for buying
+      <li><a class='projects' href="https://www.mytravelbiz.com/">Mytravelbiz</a>: Mytravelbiz is a platform for buying
         and booking airline tickets, booking cars and
         hotels. Also, have a Multilevel Marketing, Wallet and Direct Sales (AWS, Serverless, Node.js)
         Worked with different API-s for getting, booking, buying, updating and
         canceling Hotels, Cars, and Airline tickets(Priceline, Expedia, etc...​ ).
         Implementation Payment Methods(Stripe, SnapPay, PCI Gate, CoinPayments). KYC system. Created MTB Wallet with its
         own payment system. Also worked on creating an admin panel to manage all system.</li>
-      <li><a href="https://www.travelcoin.org/">Travelcoin Foundation</a> :Purchase system of coins that you can spend
+      <li><a class='projects' href="https://www.travelcoin.org/">Travelcoin Foundation</a>: Purchase system of coins that you can spend
         in Mytravelbiz platforms
         (AWS, Serverless, Node.js). Auto Buy system. Matching algorithm system.Coins purchase with different coins(BTC,
         ETH, etc...).
         Deployed Smart contracts. Also worked on creating an admin panel to manage all system. </li>
       <li><a class='projects' href="https://www.travelcoin.org/travelcoin-plus/">Travelcoin Plus</a>: ICO </li>
-      <li><a class='projects' href="https://app.e-coship.com/">E-coShip</a> : eCommerce Platform works with eBay,
+      <li><a class='projects' href="https://app.e-coship.com/">E-coShip</a>: eCommerce Platform works with eBay,
         Amazon, Magento and delivery platforms DHL, IPO, DPD etc... (Node.js, Express, Mongodb).</li>
-      <li><a class='projects' href="https://adlooker.com/">Adlooker</a> : VR and AR Network (AWS, Serverless, Node.js).
+      <li><a class='projects' href="https://adlooker.com/">Adlooker</a>: VR and AR Network (AWS, Serverless, Node.js).
       </li>
-      <li><a class='projects' href="https://snowbus.com/">Snowbus</a> :A similar platform with Mytravelbiz but in the
+      <li><a class='projects' href="https://snowbus.com/">Snowbus</a>: A similar platform with Mytravelbiz but in the
         field of ski resorts. (AWS, Serverless, Node.js, GraphQL).</li>
       <li>Mobile app and admin panel for China restaurants.</li>
       <li>And also work on LS Innovations startups.</li>
