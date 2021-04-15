@@ -1,442 +1,364 @@
+<!-- Hello, curious soul! Welcome to the source code for my website :)
+This site is developed, designed, and maintained by Edgar Sargsyan. Last updated April, 2021 -->
 <!DOCTYPE html>
-<!-- saved from url=(0035)file:///home/user/Documents/CV.html -->
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Edgar Sargsyan's CV</title>
-    <link rel="icon" type="image/png" href="./images/logo.png" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZLBPM2BWG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<html lang='en'>
+   <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+      <title>Cyber Eternal</title>
+      <meta name="description" content="I'm Edgar, Back End Software Engineer and Cloud Solution Architect">
+      <meta name="keywords" content="Edgar, Sargsyan, Cyber, Eternal, cyber-eternal, Senior, Software, Back End, Developer, JS, Python, TypeScript, Javascript, Software Developer, Software Engineer, Engineer, Back-end, DevOps, Cloud, Architect, Solution architect, Cloud architect">
+      <meta name="author" content="Edgar Sargsyan">
+      <link rel='stylesheet' href='style.css' />
+      <link rel='stylesheet' href='mobile.css' />
+      <link rel="icon" type="image/png" href="./src/images/logo.png" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZLBPM2BWG"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+  
+        gtag('config', 'G-RZLBPM2BWG');
+      </script>
+   </head>
+   <body id='body'>
+      <nav class='title fixed-elements'>
+         <div class='container elements'>
+            <a href='#' ><i class='fa fa-user fa-3x nav-icon small-icon' aria-hidden=true></i>
+            <div class='overlay'>
+               <div class='text'><b class='nav-text t'>About Me</b></div>
+            </div></a>
+         </div>
+         <div class='container elements'>
+          <a href='#skills'><i class='fa fa-cog fa-3x fa-spin nav-icon small-icon' aria-hidden=true></i>
+          <div class='overlay'>
+             <div class='text'><b class='nav-text t'>Skills</b></div>
+          </div></a>
+       </div>
+         <div class='container elements'>
+          <a href='#experience'><i class='fa fa-briefcase fa-3x nav-icon small-icon' aria-hidden=true></i>
+          <div class='overlay'>
+             <div class='text'><b class='nav-text t'>Experience</b></div>
+          </div></a>
+       </div>
+         <div class='container elements'>
+            <a href='#resume'><i class='fa fa-file-text fa-3x nav-icon small-icon' aria-hidden=true></i>
+            <div class='overlay'>
+               <div class='text'><b class='nav-text t'>Resume</b></div>
+            </div></a>
+         </div>
+         <!-- <div class='container elements'>
+            <a href='#portfolio'><i class='fa fa-code-fork fa-3x nav-icon small-icon' aria-hidden=true></i>
+            <div class='overlay'>
+               <div class='text'><b class='nav-text t'>Portfolio</b></div>
+            </div></a>
+         </div> -->
+         <!-- <div class='container'>
+            <a href='#resources'><i class='fa fa-bookmark fa-3x nav-icon small-icon' aria-hidden=true></i>
+            <div class='overlay'>
+               <div class='text'><b class='nav-text t'>Resources</b></div>
+            </div></a>
+         </div> -->
+      </nav>
+      <nav class='title fixed-elements-right'>
+         <script src='src/js/dark.js'></script>
+         <div class='dark-mode show elements' onclick='toggleDark()' onmouseover="" style="cursor: pointer;"><i class='fa fa-moon-o fa-3x nav-icon'></i>
+         <div class='overlay'>
+            <div class='text nav-text t'><b>Dark Mode</b></div>
+         </div></div>
+         <div class='light-mode elements' onclick='toggleDark()' onmouseover="" style="cursor: pointer;"><i class='fa fa-sun-o fa-3x nav-icon'></i>
+         <div class='overlay elements'>
+            <div class='text nav-text t'><b>Light Mode</b></div>
+         </div></div>
+      </div>
+      </nav>
+      <div class='view'>
+         <div class='main'>
+            <div class='mainhead'>
+               <div class='side-right'>
+                  <a class="elements" href='https://github.com/cyber-eternal' title='GitHub' target='_blank'><i class='fa fa-github top-icon' aria-hidden=true></i></a>
+                  <a class="elements" href='https://www.linkedin.com/in/edgar-sargsyan-403319152/' title='LinkedIn' target='_blank'><i class='fa fa-linkedin top-icon' aria-hidden=true></i></a>
+                  <!-- <a class="elements" href='https://www.upwork.com/freelancers/~0132a93268ec804fb8' title='Upwork' target='_blank'><img
+                   class="logo"
+                   src="./src/images/upwork.png",
+                   width="40px",
+                   height="45px",
+                   alt="Upwork",
+                   class='fa top-icon'
+                   aria-hidden=true
+                 /></a> -->
+                  <a class="elements" href='mailto:92edgarsargsyan@gmail.com' title='Email' target='_blank' class='t'><i class='fa fa-at top-icon' aria-hidden=true></i></a>
+               </div>
+               <br>
+               <br>
+               <div class='descrip' id='titlename'>
+                  <h3 class='bigtitle t'>Edgar Sargsyan</h3>
+               </div>
+               <section id='about'>
+                  <div class="lightback">
+                     <h2 class='indescrip'> Senior Backend Software Engineer / Cloud Solution Architect</h2>
+                     <br><br><br>
 
-      gtag('config', 'G-RZLBPM2BWG');
-    </script>
-    <style type="text/css">
-      #body {
-        margin: 0;
-        padding: 0;
-        font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial,
-          sans-serif;
-        color: #6c7073;
-      }
+                     <div id='default' class='subdescrip'>Hi! I'm Edgar!</div>
+                     <div id='default' class='subdescrip'>My aim is not only to establish coding but also to provide relevant and clear-cut coding methods that are implemented in order to attain the most efficient coding system possible, writing of the high-performance code, increasing code coverage by unit and integration tests, saving time and resources for wasting, acceleration of releases, hardworking, team management, decision making, and problem-solving, strong communication and collaboration, I'm able to motivate and lead others in a team environment, to work in a team, and in stressful situations.</div>
+                     <div id='default' class='subdescrip'>Feel free to contact me and have a nice day!</div>
+                     
+                     <br>
+                  </div>
+               </section>
+               <section id='skills'>
+                  <div class="lightback">
+                  <h2 class='indescrip'>Skill Highlights</h2>
+                  <br><br>
+                  <ul class="list subdescrip">
+                     <li><span class="bold-text">Programming Languages:</span> JavaScript, TypeScript, SQL, Python</li>
+                     <li>
+                      <span class="bold-text">Amazon Web Services(AWS):</span> IAM, EC2, Lambda, Step Functions, S3,
+                       DynamoDB, Aurora, RDS, API Gateway, CodePipeline, CodeDeploy,
+                       CodeBuild, SES, SNS, SQS, VPC, Route53, CloudWatch, CloudFormation,
+                       CloudFront, Amazon ECS/ECR (Docker) etc...
+                     </li>
+                     <li>
+                      <span class="bold-text">Technologies:</span> Node.js, Serverless, Express.js,
+                       Nest.js, WebSockets, Jasmine, Jest, Sinon, Mocha, Chai, ExtJS,
+                       RabbitMQ, Kubernetes, Docker/Docker-compose, OpenCV, Keras, Terraform, Tensorflow, Blockchain, Solidity
+                     </li>
+                     <li><span class="bold-text">Source Control:</span> Git, SVN</li>
+                     <li><span class="bold-text">Tools:</span> GitLab, GitHub, Bitbucket, Jenkins, Jira, Trello, Asana</li>
+                     <li>
+                      <span class="bold-text">Databases:</span> Redis, MongoDB, MySQL, SQL, MsSQL, PostgreSQL, DynamoDB,
+                       Cassandra DB, Hana DB
+                     </li>
+                     <li><span class="bold-text">ORM/ODM:</span> Sequelize, Mongoose</li>
+                     <li><span class="bold-text">Methodology:</span> Agile, Scrum, Kanban</li>
+                     <li><span class="bold-text">Documenting:</span> Calamary, Redoc, Swagger, OpenAPI3, apidoc</li>
+                   </ul>
+                  </div>
+               </section>
+               <section id='experience'>
+                  <div class='lightback'>
+                  <h2 class='indescrip'>Experience</h2>
+                  <br><br>
+                  <div class="subdescrip">
+                  <h3>
+                     Software Engineer(from Preezma company): 04-2020 - to Present
+                     <a href="https://www.onsweb.nl/"
+                       ><img
+                         src="src/images/onsweb-logo.png"
+                         alt="Onsweb"
+                         style="height: 25px; margin-bottom: -8px; margin-left: 5px"
+                     /></a>
+                   </h3>
+                   <ul class="list">
+                     <li>
+                       Working on the Onsweb projects based on
+                       <span class="technologies"
+                         >Node.js, Express, TypeScript, Nest.js, MsSQL, Hana DB, MySQL,
+                         Docker/Docker-Compose, ODBC, Kubernetes, Jira, Git/GitLab</span
+                       >.
+                     </li>
+                   </ul>
+                   <h3>
+                     Software Engineer(from Preezma company): 11-2020 - 04-2021
+                     <a href="https://digital14.com/"
+                       ><img
+                         src="src/images/digital14.png"
+                         alt="Digital14"
+                         style="height: 25px; margin-bottom: -8px; margin-left: 5px"
+                     /></a>
+                   </h3>
+                   <ul class="list">
+                     <li>
+                       <a class="projects" href="https://www.tamm.abudhabi/"
+                         >Abu Dhabi Government Services - TAMM</a
+                       >: A unified system helping you find Abu Dhabi government services and
+                       information
+                       <span class="technologies"
+                         >(Node.js, Express, TypeScript, Docker, Docker-Compose, Kubernetes,
+                         Redis, MariaDB, GraphQL, Swagger, Calamary, Kibana, GitLab)</span
+                       >. TAMM, a product of Ghadan 21 and developed through the cooperation
+                       with all government entities in Abu Dhabi, harnesses the latest
+                       technologies and digital solutions to provide seamless service
+                       experiences for customers. Operated by Abu Dhabi Digital Authority
+                       (ADDA), the ecosystem provides its customers with a comprehensive
+                       range of government services through one single point of access at any
+                       time and place. Using TAMM, customers can have direct access to
+                       services and information without having to visit each and every
+                       government entity. TAMM continues to advance the digital
+                       transformation in Abu Dhabi by providing all Abu Dhabi citizens,
+                       residents and visitors with high quality and efficient government
+                       services through safe and integrated digital platforms.
+                     </li>
+                   </ul>
+                   <h3>
+                     Back End Software Engineer || Cloud Architect at Preezma : 10-2019 - to Present
+                     <a href="https://preezma.com/"
+                       ><img
+                         src="src/images/preez-logo.png"
+                         alt="LS"
+                         style="height: 25px; margin-bottom: -6px; margin-left: 5px"
+                     /></a>
+                   </h3>
+                   <ul class="list">
+                     <li>
+                       <a class="projects" href="http://cc.preezma.com/">Carrier Community</a>:
+                       The global Community for telecom industry
+                       <span class="technologies">
+                         (Node.js, Express, AWS, PostgreSQL, Socket.io, Bitbucket) </span>
+                         REST API implementation and Socket.io integration for the chat functionality
+                     </li>
+                     <li>
+                       <a class="projects" href="https://chatmantics.com/">Chatmantics</a>:
+                       Conversations that drive efficient customer acquisition. Chatmantics
+                       is a conversational automation platform that allows you to plan,
+                       deploy and integrate virtual assistants powered by AI and Natural
+                       Language
+                       <span class="technologies">
+                         (Node.js, Serverless, AWS, Aurora(Mysql), GitHub) </span
+                       >. Payment method integration(Stripe). Different tables data getting,
+                       filtering, searching, sorting and exporting as CSV.IBM Watson API
+                       integration (Bots). Nexmo and Bandwidth APIs integration.Automated
+                       voice and text messaging system implementation.
+                     </li>
+                     <li>
+                       <a class="projects" href="https://app.rostermetrics.com/"
+                         >Roster Metrics</a
+                       >: Machine Learning Powered Fantasy Sports Projections
+                       <span class="technologies"
+                         >(AWS, Serverless, Node.js, PostgreSQL, GitHub)</span
+                       >. I'm worked on Back End, Database and Cloud Architecture. Payment
+                       method integration(Stripe). Integration SportsData.io API.Syncing data
+                       with SportsData.io API (NBA, MLB, NFL, NHL, MMA, PGA, etc...),
+                       Projections getting, filtering, searching, sorting and exporting as
+                       CSV. Lineup Optimizer implementation using R scripts
+                     </li>
+                     <li>
+                       <a class="projects" href="https://memo.am/">Memo.am</a>: Order Memo,
+                       and your lovely memories would appear in your pictures.
+                       <span class="technologies"
+                         >(AWS S3, Node.js, Express, Docker, Docker-Compose, MySql,
+                         GitHub)</span
+                       >.I'm worked on Back End, Database Architecture DevOps, and Cloud Architecture. Payment methods
+                       integration(Ameria bank, Idram).
+                     </li>
+                   </ul>
+                   <h3>
+                     Back End Software Engineer at LS Innovations : 01-2018 - 10-2019
+                     <a href="https://lstones.eu/en"
+                       ><img
+                         src="src/images/logo2-flat.svg"
+                         alt="LS"
+                         style="height: 25px; margin-bottom: -5px; margin-left: 5px"
+                     /></a>
+                   </h3>
+                   <ul class="list">
+                     <li>
+                       <a class="projects" href="https://www.mytravelbiz.com/">Mytravelbiz</a
+                       >: Mytravelbiz is a platform for buying and booking airline tickets,
+                       booking cars and hotels. Also, have a Multilevel Marketing, Wallet and
+                       Direct Sales
+                       <span class="technologies"
+                         >(AWS, Serverless, Node.js, DynamoDB, GitHub)</span
+                       >
+                       Worked with different API-s for getting, booking, buying, updating and
+                       canceling Hotels, Cars, and Airline tickets(Priceline, Expedia,
+                       etc...​ ). Implementation Payment Methods(Stripe, SnapPay, PCI Gate,
+                       CoinPayments). KYC system. Created MTB Wallet with its own payment
+                       system. Also worked on creating an admin panel to manage all system.
+                     </li>
+                     <li>
+                       <a class="projects" href="https://www.travelcoin.org/"
+                         >Travelcoin Foundation</a
+                       >: Purchase system of coins that you can spend in Mytravelbiz
+                       platforms
+                       <span class="technologies"
+                         >(AWS, Serverless, Node.js, DynamoDB, GitHub)</span
+                       >. Auto Buy system. Matching algorithm system.Coins purchase with
+                       different coins(BTC, ETH, etc...). Deployed Smart contracts. Also
+                       worked on creating an admin panel to manage all system.
+                     </li>
+                     <li>
+                       <a class="projects" href="https://www.travelcoin.org/travelcoin-plus/"
+                         >Travelcoin Plus</a
+                       >: ICO
+                     </li>
+                     <li>
+                       <a class="projects" href="https://app.e-coship.com/">E-coShip</a>:
+                       eCommerce Platform works with eBay, Amazon, Magento and delivery
+                       platforms DHL, IPO, DPD etc...
+                       <span class="technologies">(Node.js, Express, Mongodb, GitLab)</span>.
+                     </li>
+                     <li>
+                       <a class="projects" href="https://adlooker.com/">Adlooker</a>: VR and
+                       AR Network (AWS, Serverless, Node.js, DynamoDB, GitHub).
+                     </li>
+                     <li>
+                       <a class="projects" href="https://snowbus.com/">Snowbus</a>: A similar
+                       platform with Mytravelbiz but in the field of ski resorts.
+                       <span class="technologies"
+                         >(AWS, Serverless, Node.js, GraphQL, MongoDB, GitHub)</span
+                       >.
+                     </li>
+                   </ul>
+                   <h3>Back End Engineer And Cloud Architect (Freelancer) : from 04-2017 </h3>
+                   <ul class="list">
+                     <li>Lambda functions and AWS Services</li>
+                     <li>Serverless Applications</li>
+                     <li>Solutions Architecture</li>
+                     <li>Work with relevant Crypto Exchange APIs</li>
+                     <li>VPS and VDS servers configuration</li>
+                   </ul>
+                  </div>
 
-      #prof {
-        text-align: center;
-        margin-top: 0px;
-      }
 
-      a.projects {
-        font-weight: bold;
-      }
-
-      #rightSide > p,
-      #rightSide > div > p,
-      #rightSide > .list > li {
-        line-height: 16px;
-        font-size: 16px;
-        line-height: 1.3;
-      }
-
-      #leftSide {
-        width: 25%;
-        padding: 15px;
-        height: 2500px;
-        float: left;
-        background-color: #0f1114;
-        color: #dcdce7;
-      }
-
-      h1 {
-        text-align: center;
-        font-size: 25px;
-        margin-bottom: 0px;
-      }
-
-      #leftSide > h1 {
-        font-size: 35px;
-      }
-
-      #leftSide > h2,
-      #rightSide > h2 {
-        font-size: 20px;
-      }
-
-      #rightSide {
-        width: 66%;
-        padding: 0px 29px;
-        float: right;
-        height: 2500px;
-      }
-
-      #leftSide > p > span,
-      #leftSide > .list > li {
-        font-size: 16px;
-        line-height: 1.3;
-      }
-
-      .boldSpan {
-        font-weight: bolder;
-        margin-right: 5px;
-        /* display: block; */
-      }
-
-      .inline {
-        widows: 20%;
-        margin: 10px;
-        float: left;
-      }
-
-      #text {
-        clear: both;
-        font-size: 12px;
-      }
-
-      hr {
-        display: block;
-        height: 1px;
-        border: 0;
-        border-top: 1px solid #5180ae;
-        margin: 1em 0;
-        padding: 0;
-      }
-
-      a {
-        text-decoration: none !important;
-        color: #11678c;
-        display: inline !important;
-      }
-
-      .download {
-        padding: 5px;
-        border-radius: 5px;
-        background-color: #11678c;
-        color: whitesmoke;
-      }
-
-      .download:hover {
-        opacity: 0.8;
-      }
-
-      .logo {
-        margin-right: 10px;
-        width: 22px;
-        height: 22px;
-      }
-
-      .technologies {
-        font-weight: bold;
-      }
-
-      #accounts {
-        font-size: 20px;
-      }
-    </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
-  </head>
-
-  <body id="body">
-    <div id="leftSide">
-      <a
-        class="download"
-        target="blank"
-        href="https://drive.google.com/file/d/18WbbMhFp4U8157tvPu61xQHKLD7xS6q1/view?usp=sharing"
-        >Download PDF</a
-      >
-      <span style="float: right">Updated: 04/2021 </span>
-      <h1>Edgar Sargsyan</h1>
-      <br />
-      <hr />
-      <h2 id="prof">Back End Software Engineer || Cloud Solution Architect</h2>
-      <hr />
-      <p>
-        <span class="boldSpan">Email:</span
-        ><span>92edgarsargsyan@gmail.com</span>
-      </p>
-      <p>
-        <span class="boldSpan">Secondary Email:</span
-        ><span>sargsyans.own@gmail.com</span>
-      </p>
-      <hr />
-      <h2>Languages</h2>
-      <hr />
-      <p>Armenian: &nbsp;Native</p>
-      <p>Russian:&nbsp; &nbsp;&nbsp;&nbsp;Advanced</p>
-      <p>English:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Upper-Intermediate</p>
-      <hr />
-      <h2>Accounts</h2>
-      <hr />
-      <p>
-        <img class="logo" src="./images/github-logo.png" alt="GitHub" /><a
-          class="boldSpan"
-          id="accounts"
-          target="blank"
-          href="https://github.com/cyber-eternal"
-          >GitHub</a
-        >
-      </p>
-      <p>
-        <img class="logo" src="./images/LinkedIn-Ilogo.png" alt="Linkedin" /><a
-          class="boldSpan"
-          id="accounts"
-          target="blank"
-          href="https://www.linkedin.com/in/edgar-sargsyan"
-          >Linkedin</a
-        >
-      </p>
-      <p>
-        <img class="logo" src="./images/upwork-logo.png" alt="Upwork" /><a
-          class="boldSpan"
-          id="accounts"
-          target="blank"
-          href="https://www.upwork.com/freelancers/~0132a93268ec804fb8"
-          >Upwork</a
-        >
-      </p>
-      <p>
-        <img class="logo" src="./images/kwork-png.png" alt="kwork" /><a
-          class="boldSpan"
-          id="accounts"
-          target="blank"
-          href="https://kwork.ru/user/anonymous92"
-          >Kwork</a
-        >
-      </p>
-      <hr />
-      <h2>Interests</h2>
-      <hr />
-      <ul class="list">
-        <li>Machine Learning and AI</li>
-        <li>Hacking and Security</li>
-        <li>Sport and Extreme, Snowboarding</li>
-        <li>Films and Music</li>
-      </ul>
-    </div>
-    <div id="rightSide">
-      <h2>Professional Summary</h2>
-      <hr />
-      <p>
-        I'm Back End Engineer and Cloud solution architect. My aim is not only
-        to establish coding but also to provide relevant and clear-cut coding
-        methods that are implemented in order to attain the most efficient
-        coding system possible, writing of the high-performance code, increasing
-        code coverage by unit and integration tests, saving time and resources
-        for wasting, acceleration of releases, hardworking, team management,
-        decision making, and problem-solving, strong communication and
-        collaboration, I'm able to motivate and lead others in a team
-        environment, to work in a team, and in stressful situations.
-      </p>
-      <hr />
-      <h2>Skill Highlights</h2>
-      <hr />
-      <ul class="list">
-        <li>Languages: JavaScript, TypeScript, SQL, Python</li>
-        <li>
-          Amazon Web Services (AWS) (IAM, EC2, Lambda, Step Functions, S3,
-          DynamoDB, Aurora, RDS, API Gateway, CodePipeline, CodeDeploy,
-          CodeBuild, SES, SNS, SQS, VPC, Route53, CloudWatch, CloudFormation,
-          CloudFront, Amazon ECS/ECR (Docker) etc...)
-        </li>
-        <li>
-          Technologies: Node.js, Serverless, SOA/REST/Web Services, Express.js,
-          Nest.js, WebSockets, Jasmine, Jest, Sinon, Mocha, Chai, ExtJS,
-          RabbitMQ, Kubernetes, Docker/Docker-compose, Chef, Blockchain,
-          Solidity
-        </li>
-        <li>Source Control: Git, SVN</li>
-        <li>Tools: GitLab, GitHub, Bitbucket, Jenkins, Jira, Trello, Asana</li>
-        <li>
-          Databases: Redis, MongoDB, MySQL, SQL, MsSQL, PostgreSQL, DynamoDB,
-          Cassandra DB, Hana DB
-        </li>
-        <li>ORM/ODM: Sequelize, Mongoose</li>
-        <li>Methodology: Agile, Scrum, Kanban</li>
-      </ul>
-      <hr />
-      <h2>Education</h2>
-      <hr />
-      <p>
-        Gyumri state pedagogical university - Mathematic and Physic (2009 -
-        2013)
-      </p>
-      <p>
-        Techno Education Academy : ​ Web Development/Backend Development (2017)
-      </p>
-      <hr />
-      <h2>Experience</h2>
-      <h4>
-        Software Engineer(from Preezma company): (from 04-2020 to Present)
-        <a href="https://www.onsweb.nl/"
-          ><img
-            src="./images/onsweb-logo.png"
-            alt="Onsweb"
-            style="height: 25px; margin-bottom: -8px; margin-left: 5px"
-        /></a>
-      </h4>
-      <ul class="list">
-        <li>
-          Working on the Onsweb projects based on
-          <span class="technologies"
-            >Node.js, Express, TypeScript, Nest.js, MsSQL, Hana DB, MySQL,
-            Docker/Docker-Compose, ODBC, Kubernetes, Jira, Git/GitLab</span
-          >.
-        </li>
-      </ul>
-      <hr />
-      <h4>
-        Software Engineer(from Preezma company): (from 11-2020 to 04-2021)
-        <a href="https://digital14.com/"
-          ><img
-            src="./images/digital14.png"
-            alt="Digital14"
-            style="height: 25px; margin-bottom: -8px; margin-left: 5px"
-        /></a>
-      </h4>
-      <ul class="list">
-        <li>
-          <a class="projects" href="https://www.tamm.abudhabi/"
-            >Abu Dhabi Government Services - TAMM</a
-          >: A unified system helping you find Abu Dhabi government services and
-          information
-          <span class="technologies"
-            >(Node.js, Express, TypeScript, Docker, Docker-Compose, Kubernetes,
-            Redis, MariaDB, GraphQL, Swagger, Calamary, Kibana, GitLab)</span
-          >. TAMM, a product of Ghadan 21 and developed through the cooperation
-          with all government entities in Abu Dhabi, harnesses the latest
-          technologies and digital solutions to provide seamless service
-          experiences for customers. Operated by Abu Dhabi Digital Authority
-          (ADDA), the ecosystem provides its customers with a comprehensive
-          range of government services through one single point of access at any
-          time and place. Using TAMM, customers can have direct access to
-          services and information without having to visit each and every
-          government entity. TAMM continues to advance the digital
-          transformation in Abu Dhabi by providing all Abu Dhabi citizens,
-          residents and visitors with high quality and efficient government
-          services through safe and integrated digital platforms.
-        </li>
-      </ul>
-      <hr />
-      <h4>
-        Back End Software Engineer || Cloud Architect at Preezma (from 10-2019
-        to Present)
-        <a href="https://preezma.com/"
-          ><img
-            src="./images/preez-logo.png"
-            alt="LS"
-            style="height: 25px; margin-bottom: -6px; margin-left: 5px"
-        /></a>
-      </h4>
-      <ul class="list">
-        <li>
-          <a class="projects" href="https://chatmantics.com/">Chatmantics</a>:
-          Conversations that drive efficient customer acquisition. Chatmantics
-          is a conversational automation platform that allows you to plan,
-          deploy and integrate virtual assistants powered by AI and Natural
-          Language
-          <span class="technologies">
-            (Node.js, Serverless, AWS, Aurora(Mysql), GitHub) </span
-          >. Payment method integration(Stripe). Different tables data getting,
-          filtering, searching, sorting and exporting as CSV.IBM Watson API
-          integration (Bots). Nexmo and Bandwidth APIs integration.Automated
-          voice and text messaging system implementation.
-        </li>
-        <li>
-          <a class="projects" href="https://app.rostermetrics.com/"
-            >Roster Metrics</a
-          >: Machine Learning Powered Fantasy Sports Projections
-          <span class="technologies"
-            >(AWS, Serverless, Node.js, PostgreSQL, GitHub)</span
-          >. I'm worked on Back End, Database and Cloud Architecture. Payment
-          method integration(Stripe). Integration SportsData.io API.Syncing data
-          with SportsData.io API (NBA, MLB, NFL, NHL, MMA, PGA, etc...),
-          Projections getting, filtering, searching, sorting and exporting as
-          CSV. Lineup Optimizer implementation using R scripts
-        </li>
-        <li>
-          <a class="projects" href="https://memo.am/">Memo.am</a>: Order Memo,
-          and your lovely memories would appear in your pics.
-          <span class="technologies"
-            >(AWS S3, Node.js, Express, Docker, Docker-Compose, MySql,
-            GitHub)</span
-          >. I'm worked on Back End, Database and Cloud Architecture.I'm worked
-          on Back End, Database Architecture and DevOps. Payment methods
-          integration(Ameria bank, Idram).
-        </li>
-      </ul>
-      <h4>
-        Back End Software Engineer at LS Innovations (from 01-2018 to 10-2019)
-        <a href="https://lstones.eu/en"
-          ><img
-            src="./images/logo2-flat.svg"
-            alt="LS"
-            style="height: 25px; margin-bottom: -5px; margin-left: 5px"
-        /></a>
-      </h4>
-      <ul class="list">
-        <li>
-          <a class="projects" href="https://www.mytravelbiz.com/">Mytravelbiz</a
-          >: Mytravelbiz is a platform for buying and booking airline tickets,
-          booking cars and hotels. Also, have a Multilevel Marketing, Wallet and
-          Direct Sales
-          <span class="technologies"
-            >(AWS, Serverless, Node.js, DynamoDB, GitHub)</span
-          >
-          Worked with different API-s for getting, booking, buying, updating and
-          canceling Hotels, Cars, and Airline tickets(Priceline, Expedia,
-          etc...​ ). Implementation Payment Methods(Stripe, SnapPay, PCI Gate,
-          CoinPayments). KYC system. Created MTB Wallet with its own payment
-          system. Also worked on creating an admin panel to manage all system.
-        </li>
-        <li>
-          <a class="projects" href="https://www.travelcoin.org/"
-            >Travelcoin Foundation</a
-          >: Purchase system of coins that you can spend in Mytravelbiz
-          platforms
-          <span class="technologies"
-            >(AWS, Serverless, Node.js, DynamoDB, GitHub)</span
-          >. Auto Buy system. Matching algorithm system.Coins purchase with
-          different coins(BTC, ETH, etc...). Deployed Smart contracts. Also
-          worked on creating an admin panel to manage all system.
-        </li>
-        <li>
-          <a class="projects" href="https://www.travelcoin.org/travelcoin-plus/"
-            >Travelcoin Plus</a
-          >: ICO
-        </li>
-        <li>
-          <a class="projects" href="https://app.e-coship.com/">E-coShip</a>:
-          eCommerce Platform works with eBay, Amazon, Magento and delivery
-          platforms DHL, IPO, DPD etc...
-          <span class="technologies">(Node.js, Express, Mongodb, GitLab)</span>.
-        </li>
-        <li>
-          <a class="projects" href="https://adlooker.com/">Adlooker</a>: VR and
-          AR Network (AWS, Serverless, Node.js, DynamoDB, GitHub).
-        </li>
-        <li>
-          <a class="projects" href="https://snowbus.com/">Snowbus</a>: A similar
-          platform with Mytravelbiz but in the field of ski resorts.
-          <span class="technologies"
-            >(AWS, Serverless, Node.js, GraphQL, MongoDB, GitHub)</span
-          >.
-        </li>
-      </ul>
-      <h4>Back End Engineer And Cloud Architect (Freelancer) (from 04-2017)</h4>
-      <ul class="list">
-        <li>Lambda functions and AWS Services</li>
-        <li>Serverless Applications</li>
-        <li>Solutions Architecture</li>
-        <li>Work with relevant Crypto Exchange APIs</li>
-        <li>VPS and VDS servers configuration</li>
-      </ul>
-    </div>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-RZLBPM2BWG"
-    ></script>
-    <script src="./script.js"></script>
-  </body>
+                  </div>
+               </section>
+               <!-- <section id='portfolio'>
+                  <div class='lightback'>
+                     <h2 class='indescrip'>Portfolio</h2>
+                     <br>
+                  </div>
+               </section> -->
+               <section id='resume'>
+                  <div class='lightback'>
+                     <h2 class='indescrip'>Resume</h2>
+                     <embed class="pdf" src="src/cv/EdgarSargsyan'sCV.pdf" />
+                     <div class='res-segment centered'>
+                        <div class='download-descrip centered t'>Download</div>
+                        <a id="file" target="_blank" href="src/cv/EdgarSargsyan'sCV.pdf" download="Edgar_Sargsyan's_Resume" target="_blank" title="My Resume (PDF)"><i class='fa fa-file-pdf-o top-icon' aria-hidden=true></i> <span class='t'>PDF Download</span></a>	
+                        <br>
+                        <a id="file" target="_blank" href="src/cv/EdgarSargsyan'sCV.pdf.zip" download="Edgar_Sargsyan's_Resume" target="_blank" title="My Resume (LaTeX)"><i class='fa fa-file-archive-o top-icon' aria-hidden=true></i> <span class='t'>LaTeX Download</span></a>
+                     </div>
+                     <br>
+                  </div>
+               </section>
+            </div>
+            </section>
+         </div>
+         <footer class='foot' id='contact'>
+            <a class='legal t'>© 2021 Edgar Sargsyan | Yerevan, Armenia</a>
+            <br><br>
+            <a class='legal email' href='92edgarsargsyan@gmail.com' target='_blank'>92edgarsargsyan@gmail.com</a>
+            <a class='legal email' href='sargsyans.own@gmail.com' target='_blank'>sargsyans.own@gmail.com</a>
+            <br><br>
+            <a class="elements" href='https://github.com/cyber-eternal' title='GitHub' target='_blank'><i class='fa fa-github' aria-hidden=true style='margin: 1%; font-size: 36px; color: white'></i></a>
+            <a class="elements" href='https://www.linkedin.com/in/edgar-sargsyan-403319152/' title='LinkedIn' target='_blank'><i class='fa fa-linkedin' aria-hidden=true style='margin: 1%; font-size: 36px; color: white'></i></a>
+            <br>
+            <script src='src/js/socials.js'></script>
+            <br><br><br>
+         </footer>
+      </div>
+      <div class="loader-wrapper" id="load">
+         <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <script>
+         window.onload = function() {
+            window.scrollTo(0, 0);
+            document.getElementById("load").className += " loaded";
+         }
+      </script>
+      
+   </body>
 </html>
