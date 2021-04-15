@@ -8,7 +8,7 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
       <meta http-equiv='X-UA-Compatible' content='ie=edge'>
       <title>Cyber Eternal</title>
       <meta name="description" content="I'm Edgar, Back End Software Engineer and Cloud Solution Architect">
-      <meta name="keywords" content="Edgar, Sargsyan, Senior, Software, Back End, Developer, JS, Python, TypeScript, Javascript, Software Developer, Software Engineer, Engineer, Back-end, DevOps, Cloud, Architect, Solution architect, Cloud architect">
+      <meta name="keywords" content="Edgar, Sargsyan, Cyber, Eternal, cyber-eternal, Senior, Software, Back End, Developer, JS, Python, TypeScript, Javascript, Software Developer, Software Engineer, Engineer, Back-end, DevOps, Cloud, Architect, Solution architect, Cloud architect">
       <meta name="author" content="Edgar Sargsyan">
       <link rel='stylesheet' href='style.css' />
       <link rel='stylesheet' href='mobile.css' />
@@ -25,24 +25,36 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
    </head>
    <body id='body'>
       <nav class='title fixed-elements'>
-         <div class='container'>
+         <div class='container elements'>
             <a href='#' ><i class='fa fa-user fa-3x nav-icon small-icon' aria-hidden=true></i>
             <div class='overlay'>
                <div class='text'><b class='nav-text t'>About Me</b></div>
             </div></a>
          </div>
-         <div class='container'>
+         <div class='container elements'>
+          <a href='#skills'><i class='fa fa-cog fa-3x fa-spin nav-icon small-icon' aria-hidden=true></i>
+          <div class='overlay'>
+             <div class='text'><b class='nav-text t'>Skills</b></div>
+          </div></a>
+       </div>
+         <div class='container elements'>
+          <a href='#experience'><i class='fa fa-briefcase fa-3x nav-icon small-icon' aria-hidden=true></i>
+          <div class='overlay'>
+             <div class='text'><b class='nav-text t'>Experience</b></div>
+          </div></a>
+       </div>
+         <!-- <div class='container elements'>
             <a href='#resume'><i class='fa fa-file-text fa-3x nav-icon small-icon' aria-hidden=true></i>
             <div class='overlay'>
-               <div class='text'><b class='nav-text t'>Resumé</b></div>
+               <div class='text'><b class='nav-text t'>Resume</b></div>
             </div></a>
-         </div>
-         <div class='container'>
+         </div> -->
+         <!-- <div class='container elements'>
             <a href='#portfolio'><i class='fa fa-code-fork fa-3x nav-icon small-icon' aria-hidden=true></i>
             <div class='overlay'>
                <div class='text'><b class='nav-text t'>Portfolio</b></div>
             </div></a>
-         </div>
+         </div> -->
          <!-- <div class='container'>
             <a href='#resources'><i class='fa fa-bookmark fa-3x nav-icon small-icon' aria-hidden=true></i>
             <div class='overlay'>
@@ -52,12 +64,12 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
       </nav>
       <nav class='title fixed-elements-right'>
          <script src='src/js/dark.js'></script>
-         <div class='dark-mode show' onclick='toggleDark()' onmouseover="" style="cursor: pointer;"><i class='fa fa-moon-o fa-3x nav-icon'></i>
+         <div class='dark-mode show elements' onclick='toggleDark()' onmouseover="" style="cursor: pointer;"><i class='fa fa-moon-o fa-3x nav-icon'></i>
          <div class='overlay'>
             <div class='text nav-text t'><b>Dark Mode</b></div>
          </div></div>
-         <div class='light-mode' onclick='toggleDark()' onmouseover="" style="cursor: pointer;"><i class='fa fa-sun-o fa-3x nav-icon'></i>
-         <div class='overlay'>
+         <div class='light-mode elements' onclick='toggleDark()' onmouseover="" style="cursor: pointer;"><i class='fa fa-sun-o fa-3x nav-icon'></i>
+         <div class='overlay elements'>
             <div class='text nav-text t'><b>Light Mode</b></div>
          </div></div>
       </div>
@@ -84,7 +96,7 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
                </div>
                <section id='about'>
                   <div class="lightback">
-                     <h2 class='indescript'> Backend Software Engineer / Cloud Solution Architect</h2>
+                     <h2 class='indescrip'> Backend Software Engineer / Cloud Solution Architect</h2>
                      <br><br><br>
 
                      <div id='default' class='subdescrip'>Hi! I'm Edgar!</div>
@@ -94,46 +106,49 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
                      <br>
                   </div>
                </section>
-               <section id='skils'>
+               <section id='skills'>
                   <div class="lightback">
-                  <h2 class='indescript'>Skill Highlights</h2>
-                  <ul class="list">
-                     <li>Languages: JavaScript, TypeScript, SQL, Python</li>
+                  <h2 class='indescrip'>Skill Highlights</h2>
+                  <br><br>
+                  <ul class="list subdescrip">
+                     <li><span class="bold-text">Programming Languages:</span> JavaScript, TypeScript, SQL, Python</li>
                      <li>
-                       Amazon Web Services (AWS) (IAM, EC2, Lambda, Step Functions, S3,
+                      <span class="bold-text">Amazon Web Services(AWS):</span> IAM, EC2, Lambda, Step Functions, S3,
                        DynamoDB, Aurora, RDS, API Gateway, CodePipeline, CodeDeploy,
                        CodeBuild, SES, SNS, SQS, VPC, Route53, CloudWatch, CloudFormation,
-                       CloudFront, Amazon ECS/ECR (Docker) etc...)
+                       CloudFront, Amazon ECS/ECR (Docker) etc...
                      </li>
                      <li>
-                       Technologies: Node.js, Serverless, SOA/REST/Web Services, Express.js,
+                      <span class="bold-text">Technologies:</span> Node.js, Serverless, Express.js,
                        Nest.js, WebSockets, Jasmine, Jest, Sinon, Mocha, Chai, ExtJS,
-                       RabbitMQ, Kubernetes, Docker/Docker-compose, Chef, Blockchain,
-                       Solidity
+                       RabbitMQ, Kubernetes, Docker/Docker-compose, OpenCV, Keras, Terraform, Tensorflow, Blockchain, Solidity
                      </li>
-                     <li>Source Control: Git, SVN</li>
-                     <li>Tools: GitLab, GitHub, Bitbucket, Jenkins, Jira, Trello, Asana</li>
+                     <li><span class="bold-text">Source Control:</span> Git, SVN</li>
+                     <li><span class="bold-text">Tools:</span> GitLab, GitHub, Bitbucket, Jenkins, Jira, Trello, Asana</li>
                      <li>
-                       Databases: Redis, MongoDB, MySQL, SQL, MsSQL, PostgreSQL, DynamoDB,
+                      <span class="bold-text">Databases:</span> Redis, MongoDB, MySQL, SQL, MsSQL, PostgreSQL, DynamoDB,
                        Cassandra DB, Hana DB
                      </li>
-                     <li>ORM/ODM: Sequelize, Mongoose</li>
-                     <li>Methodology: Agile, Scrum, Kanban</li>
+                     <li><span class="bold-text">ORM/ODM:</span> Sequelize, Mongoose</li>
+                     <li><span class="bold-text">Methodology:</span> Agile, Scrum, Kanban</li>
+                     <li><span class="bold-text">Documenting:</span> Calamary, Redoc, Swagger, OpenAPI3, apidoc</li>
                    </ul>
                   </div>
                </section>
                <section id='experience'>
                   <div class='lightback'>
-                  <h2 class='indescript'>Experience</h2>
-                  <h4>
-                     Software Engineer(from Preezma company): (from 04-2020 to Present)
+                  <h2 class='indescrip'>Experience</h2>
+                  <br><br>
+                  <div class="subdescrip">
+                  <h3>
+                     Software Engineer(from Preezma company): 04-2020 - to Present
                      <a href="https://www.onsweb.nl/"
                        ><img
-                         src="https://cv-public-images.s3.amazonaws.com/onsweb-logo.png"
+                         src="src/images/onsweb-logo.png"
                          alt="Onsweb"
                          style="height: 25px; margin-bottom: -8px; margin-left: 5px"
                      /></a>
-                   </h4>
+                   </h3>
                    <ul class="list">
                      <li>
                        Working on the Onsweb projects based on
@@ -143,16 +158,15 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
                        >.
                      </li>
                    </ul>
-                   <hr />
-                   <h4>
-                     Software Engineer(from Preezma company): (from 11-2020 to 04-2021)
+                   <h3>
+                     Software Engineer(from Preezma company): 11-2020 - 04-2021
                      <a href="https://digital14.com/"
                        ><img
-                         src="https://cv-public-images.s3.amazonaws.com/digital14.png"
+                         src="src/images/digital14.png"
                          alt="Digital14"
                          style="height: 25px; margin-bottom: -8px; margin-left: 5px"
                      /></a>
-                   </h4>
+                   </h3>
                    <ul class="list">
                      <li>
                        <a class="projects" href="https://www.tamm.abudhabi/"
@@ -176,18 +190,23 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
                        services through safe and integrated digital platforms.
                      </li>
                    </ul>
-                   <hr />
-                   <h4>
-                     Back End Software Engineer || Cloud Architect at Preezma (from 10-2019
-                     to Present)
+                   <h3>
+                     Back End Software Engineer || Cloud Architect at Preezma : 10-2019 - to Present
                      <a href="https://preezma.com/"
                        ><img
-                         src="https://cv-public-images.s3.amazonaws.com/preez-logo.png"
+                         src="src/images/preez-logo.png"
                          alt="LS"
                          style="height: 25px; margin-bottom: -6px; margin-left: 5px"
                      /></a>
-                   </h4>
+                   </h3>
                    <ul class="list">
+                     <li>
+                       <a class="projects" href="http://cc.preezma.com/">Carrier Community</a>:
+                       The global Community for telecom industry
+                       <span class="technologies">
+                         (Node.js, Express, AWS, PostgreSQL, Socket.io, Bitbucket) </span>
+                         REST API implementation and Socket.io integration for the chat functionality
+                     </li>
                      <li>
                        <a class="projects" href="https://chatmantics.com/">Chatmantics</a>:
                        Conversations that drive efficient customer acquisition. Chatmantics
@@ -224,15 +243,15 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
                        integration(Ameria bank, Idram).
                      </li>
                    </ul>
-                   <h4>
-                     Back End Software Engineer at LS Innovations (from 01-2018 to 10-2019)
+                   <h3>
+                     Back End Software Engineer at LS Innovations : 01-2018 - 10-2019
                      <a href="https://lstones.eu/en"
                        ><img
-                         src="https://cv-public-images.s3.amazonaws.com/logo2-flat.svg"
+                         src="src/images/logo2-flat.svg"
                          alt="LS"
                          style="height: 25px; margin-bottom: -5px; margin-left: 5px"
                      /></a>
-                   </h4>
+                   </h3>
                    <ul class="list">
                      <li>
                        <a class="projects" href="https://www.mytravelbiz.com/">Mytravelbiz</a
@@ -282,7 +301,7 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
                        >.
                      </li>
                    </ul>
-                   <h4>Back End Engineer And Cloud Architect (Freelancer) (from 04-2017)</h4>
+                   <h3>Back End Engineer And Cloud Architect (Freelancer) : from 04-2017 </h3>
                    <ul class="list">
                      <li>Lambda functions and AWS Services</li>
                      <li>Serverless Applications</li>
@@ -291,16 +310,19 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
                      <li>VPS and VDS servers configuration</li>
                    </ul>
                   </div>
-               </section>
-               <section id='portfolio'>
-                  <div class='lightback'>
-                     <h2 class='indescript'>Portfolio</h2>
-                     <br>
+
+
                   </div>
                </section>
-               <section id='resume'>
+               <!-- <section id='portfolio'>
                   <div class='lightback'>
-                     <h2 class='indescript'>Resume</h2>
+                     <h2 class='indescrip'>Portfolio</h2>
+                     <br>
+                  </div>
+               </section> -->
+               <!-- <section id='resume'>
+                  <div class='lightback'>
+                     <h2 class='indescrip'>Resume</h2>
                      <embed class="pdf" src="src/cv/Edgar-Sargsyan'sCV.pdf" />
                      <div class='res-segment centered'>
                         <div class='download-descrip centered t'>Download</div>
@@ -310,8 +332,7 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
                      </div>
                      <br>
                   </div>
-               </section>
-               </section>
+               </section> -->
             </div>
             </section>
          </div>
@@ -323,8 +344,6 @@ This site is developed, designed, and maintained by Edgar Sargsyan. Last updated
             <br><br>
             <a href='https://github.com/cyber-eternal' title='GitHub' target='_blank'><i class='fa fa-github' aria-hidden=true style='margin: 1%; font-size: 36px; color: white'></i></a>
             <a href='https://www.linkedin.com/in/edgar-sargsyan-403319152/' title='LinkedIn' target='_blank'><i class='fa fa-linkedin' aria-hidden=true style='margin: 1%; font-size: 36px; color: white'></i></a>
-            <br>
-            <a id="visits" href="https://github.com/cyber-eternal" target="_blank"><img alt="cyber-eternal" src="https://badges.pufler.dev/visits/cyber-eternal/cyber-eternal.github.io?logo=GitHub&label=Visits&color=white&logoColor=white&style=flat-square"/></a>
             <br>
             <script src='src/js/socials.js'></script>
             <br><br><br>
