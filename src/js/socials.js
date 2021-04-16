@@ -1,5 +1,4 @@
 const socialButton = document.getElementById('more-socials');
-socialButton.style.textDecoration = 'underline';
 socialButton.addEventListener('mouseover', () => {
     socialButton.style.cursor = 'pointer';
 });
