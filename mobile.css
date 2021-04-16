@@ -23,7 +23,7 @@
   }
   .foot {
     margin: 0;
-		padding-top: 10%;
+    padding-top: 10%;
   }
   .smlogo {
     height: 12%;
@@ -51,7 +51,7 @@
   }
   .descrip {
     font-size: 165%;
-		padding: 0;
+    padding: 0;
     /* float: left; */
   }
   .indescrip {
@@ -121,7 +121,10 @@
   .indescrip,
   .indescrip,
   .subdescrip,
-	ul {
+  ul {
     padding: 0 5% 0 5% !important;
+  }
+  #pdf-viewer {
+    display: none !important;
   }
 }
