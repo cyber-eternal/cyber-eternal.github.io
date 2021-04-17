@@ -14,8 +14,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
-a{
-  text-decoration: none
+a {
+  text-decoration: none;
 }
 @font-face {
   font-family: "LMSansQuot8-Regular";
@@ -23,7 +23,7 @@ a{
   src: url("src/lm/lmsansquot8-regular.otf") format("otf");
 }
 html {
-  background: #444444;
+  background: #252525;
 }
 .title {
   float: left;
@@ -249,10 +249,9 @@ html {
 }
 .side-right {
   float: right;
-  max-width: 20%;
   width: auto;
   margin: 4%;
-  margin-right: 15%;
+  margin-right: 5%;
   margin-top: 5%;
   font-size: 36px;
 }
@@ -344,7 +343,7 @@ html {
   text-align: center;
   margin-top: 5%;
   padding-top: 5%;
-  z-index: 100000 !important;
+  /* z-index: 100000 !important; */
 }
 .top-icon {
   color: black;
@@ -557,11 +556,15 @@ html {
 .elements:hover {
   opacity: 0.6;
 }
-.bold-text{
+.bold-text {
   font-weight: bold;
 }
-.company-logo{
+.company-logo {
   float: right;
   margin-right: -25%;
   padding-right: 10px;
+}
+.logo {
+  width: 33px;
+  height: 31px;
 }

@@ -48,6 +48,16 @@ function toggleDark() {
       portfolioPins[index].src += "&theme=tokyonight";
     }
   }
+
+  var logos = document.getElementsByClassName("logo");
+
+  for (var index = 0; index < logos.length; index++) {
+    if (logos[index].style.display === 'none') {
+      logos[index].style.display = 'inline'
+    } else {
+      logos[index].style.display = 'none'
+    }
+  }
 }
 
 var hour = new Date().getHours();
