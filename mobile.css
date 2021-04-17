@@ -127,9 +127,13 @@
   #pdf-viewer {
     display: none !important;
   }
-  .company-logo{
+  .company-logo {
     float: none;
     margin-right: 0;
     padding-right: 0;
+  }
+  .logo {
+    width: 25px;
+    height: 20px;
   }
 }
